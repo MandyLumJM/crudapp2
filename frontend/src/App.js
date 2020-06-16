@@ -3,10 +3,10 @@ import axios from "axios";
 // import { Button, Typography, AppBar } from "@material-ui/core/";
 
 function App() {
-  const [employeeId, setemployeeId] = useState("");
-  const [name, setname] = useState("");
-  const [email, setemail] = useState("");
-  const [joinDate, setJoinDate] = useState("");
+  const [employeeId, setemployeeId] = useState();
+  const [name, setname] = useState();
+  const [email, setemail] = useState();
+  const [joinDate, setJoinDate] = useState();
 
   const handleEmployeeId = (e) => {
     setemployeeId(e.target.value);
@@ -63,7 +63,7 @@ function App() {
       })
       .then((response) => console.log(response.data))
       .catch((error) => console.log(error));
-  }; //commmmmmeeettt
+  };
 
   return (
           <div>
